@@ -10,8 +10,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded());
 
-app.use(adminRoutes);
 app,use(shopRoutes)
+app.use(adminRoutes);
+
 
 //allows us to add a middleware function
 // app.use('/',(req, res, next) => {
